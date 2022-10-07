@@ -50,11 +50,22 @@ url_<-"https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosC
 res_<-httr::GET("https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/")
 xml2::read_xml(res_$content)
 
-f_raw<-jsonlite::fromJSON(url_)
-df_source<-f_raw$ListaEESSPrecio %>% glimpse()
-janitor::clean_names(df_source)%>% glimpse()
-type.convert(df_source,locale = )
 
 # READING AND WRITTING (FILES) ---------------------------------------------
+
+f_raw<-jsonlite::fromJSON(url_)
+df_source<-f_raw$ListaEESSPrecio %>% glimpse()
+df<-df_source %>% janitor::clean_names() %>% type_convert(locale = locale(decimal_mark = ","))
+
+locale()
+
+
+# CREATING A NEW VARIABLES -------------------------------------------------
+
+df_low<-df %>% mutate(expensive = !rotulo %in% c("CEPSA", "REPSOL", "BP", "SHELL"))
+
+df_low %>% select(precio_gasoleo_a,idccaa, rotulo, expensive) %>% drop_na() %>% group_by(idccaa, expensive) %>% summarise(mean(precio_gasoleo_a)) %>% view()
+
+df21915299<-df_low%>%select(precio_gasoleo_a,idccaa,rotulo,expensive)%>%drop_na()%>%group_by(idccaa,expensive)%>%summarise(mean(precio_gasoleo_a))%>%data.frame("Comunidades"= c("Andalucia","Aragón","Principado de Asturias","Islas Baleares","Canarias","Cantabria","CastillaLeon","CastillaLaMancha","Cataluña","ComunidadValenciana","Extremadura","Galicia","Madrid","Murcia","Navarra","Paisvasco","Rioja","Ceuta","Melilla"))
 
 # readr::
