@@ -68,4 +68,6 @@ df_low %>% select(precio_gasoleo_a,idccaa, rotulo, expensive) %>% drop_na() %>% 
 
 df21915299<-df_low%>%select(precio_gasoleo_a,idccaa,rotulo,expensive)%>%drop_na()%>%group_by(idccaa,expensive)%>%summarise(mean(precio_gasoleo_a))%>%data.frame("Comunidades"= c("Andalucia","Aragón","Principado de Asturias","Islas Baleares","Canarias","Cantabria","CastillaLeon","CastillaLaMancha","Cataluña","ComunidadValenciana","Extremadura","Galicia","Madrid","Murcia","Navarra","Paisvasco","Rioja","Ceuta","Melilla"))
 
+write.csv(df_low, file = "df21915299(33)")
+write.csv(df21915299, file = "df21915299(34)")
 # readr::

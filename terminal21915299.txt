@@ -1,0 +1,193 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\carlo> pip install kaggle
+Requirement already satisfied: kaggle in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (1.5.12)
+Requirement already satisfied: six>=1.10 in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (1.16.0)
+Requirement already satisfied: certifi in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (2022.9.24)
+Requirement already satisfied: python-dateutil in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (2.8.2)
+Requirement already satisfied: requests in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (2.28.1)
+Requirement already satisfied: tqdm in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (4.64.1)
+Requirement already satisfied: python-slugify in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (6.1.2)
+Requirement already satisfied: urllib3 in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from kaggle) (1.26.12)
+Requirement already satisfied: text-unidecode>=1.3 in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from python-slugify->kaggle) (1.3)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from requests->kaggle) (3.4)
+Requirement already satisfied: charset-normalizer<3,>=2 in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from requests->kaggle) (2.1.1)
+Requirement already satisfied: colorama in c:\users\carlo\appdata\local\programs\python\python310\lib\site-packages (from tqdm->kaggle) (0.4.5)
+PS C:\Users\carlo> kaggle datasets list
+ref                                                           title                                                size  lastUpdated          downloadCount  voteCount  usabilityRating
+------------------------------------------------------------  --------------------------------------------------  -----  -------------------  -------------  ---------  ---------------
+akshaydattatraykhare/diabetes-dataset                         Diabetes Dataset                                      9KB  2022-10-06 08:55:25           2364         68  1.0
+whenamancodes/covid-19-coronavirus-pandemic-dataset           COVID -19 Coronavirus Pandemic Dataset               11KB  2022-09-30 04:05:11           2036         62  1.0
+evangower/premier-league-matches-19922022                     Premier League Matches 1992-2022                     78KB  2022-10-03 02:18:33            909         39  1.0
+whenamancodes/student-performance                             Student Performance                                 104KB  2022-10-07 05:14:47           4590        111  1.0
+adnananam/spotify-artist-stats                                Spotify Artist Stats                                 28KB  2022-09-22 03:22:44           1209         31  1.0
+narayan63/netflix-popular-movies-dataset                      Netflix popular movies dataset                        1MB  2022-09-24 08:23:22           2770         50  0.9411765
+whenamancodes/students-performance-in-exams                   Students Performance in Exams                         9KB  2022-09-14 15:14:54           4807         91  1.0
+iamsouravbanerjee/world-population-dataset                    World Population Dataset                             17KB  2022-08-31 11:20:04          14774        415  1.0
+pantanjali/unemployment-dataset                               Unemployment dataset                                 17KB  2022-09-08 08:26:10           5843        134  1.0
+whenamancodes/alcohol-effects-on-study                        Alcohol Effects On Study                             18KB  2022-09-15 03:21:04           3332         78  1.0
+whenamancodes/hr-employee-attrition                           Employee Analysis | Attrition Report                 50KB  2022-09-12 10:46:33           2645         66  1.0
+whenamancodes/tesla-inc-stock-market-analysis-founding-years  TESLA Inc | Stock Market Analysis | Founding Years   62KB  2022-09-20 14:04:26           1032         36  1.0
+arslanali4343/covid19-data-from-world                         COVID-19 data from World                             11MB  2022-10-02 05:56:12           1115         33  0.9411765
+anushabellam/trending-videos-on-youtube                       Trending videos on Youtube                           29KB  2022-09-20 12:12:35           1669         43  1.0
+sergylog/ab-test-data                                         A/B test data                                        28KB  2022-09-16 17:29:06           1344        148  1.0
+sanjeetsinghnaik/fifa-23-players-dataset                      Fifa 23 Players Dataset                               2MB  2022-10-03 06:05:45            654         32  0.9705882
+madhurpant/world-economic-data                                World Economic Data                                   5KB  2022-09-24 10:15:12           1373         36  1.0
+thedevastator/airplane-crashes-and-fatalities                 Airplane Crashes and Fatalities                     582KB  2022-09-20 05:30:35           2224         66  1.0
+dansbecker/melbourne-housing-snapshot                         Melbourne Housing Snapshot                          451KB  2018-06-05 12:52:24          97564       1155  0.7058824
+guerl1/fifa-23-complete-player-database                       FIFA 23 Complete Player Database                      1MB  2022-10-03 12:31:53            642         23  1.0
+PS C:\Users\carlo> cd ..
+PS C:\Users> cd ..
+PS C:\> cd lep21915299
+PS C:\lep21915299> kaggle datasets list
+ref                                                           title                                                size  lastUpdated          downloadCount  voteCount  usabilityRating
+------------------------------------------------------------  --------------------------------------------------  -----  -------------------  -------------  ---------  ---------------
+akshaydattatraykhare/diabetes-dataset                         Diabetes Dataset                                      9KB  2022-10-06 08:55:25           2364         68  1.0
+whenamancodes/covid-19-coronavirus-pandemic-dataset           COVID -19 Coronavirus Pandemic Dataset               11KB  2022-09-30 04:05:11           2036         62  1.0
+evangower/premier-league-matches-19922022                     Premier League Matches 1992-2022                     78KB  2022-10-03 02:18:33            909         39  1.0
+whenamancodes/student-performance                             Student Performance                                 104KB  2022-10-07 05:14:47           4590        111  1.0
+adnananam/spotify-artist-stats                                Spotify Artist Stats                                 28KB  2022-09-22 03:22:44           1209         31  1.0
+narayan63/netflix-popular-movies-dataset                      Netflix popular movies dataset                        1MB  2022-09-24 08:23:22           2770         50  0.9411765
+whenamancodes/students-performance-in-exams                   Students Performance in Exams                         9KB  2022-09-14 15:14:54           4807         91  1.0
+iamsouravbanerjee/world-population-dataset                    World Population Dataset                             17KB  2022-08-31 11:20:04          14774        415  1.0
+pantanjali/unemployment-dataset                               Unemployment dataset                                 17KB  2022-09-08 08:26:10           5843        134  1.0
+whenamancodes/alcohol-effects-on-study                        Alcohol Effects On Study                             18KB  2022-09-15 03:21:04           3332         78  1.0
+whenamancodes/hr-employee-attrition                           Employee Analysis | Attrition Report                 50KB  2022-09-12 10:46:33           2645         66  1.0
+whenamancodes/tesla-inc-stock-market-analysis-founding-years  TESLA Inc | Stock Market Analysis | Founding Years   62KB  2022-09-20 14:04:26           1032         36  1.0
+arslanali4343/covid19-data-from-world                         COVID-19 data from World                             11MB  2022-10-02 05:56:12           1115         33  0.9411765
+anushabellam/trending-videos-on-youtube                       Trending videos on Youtube                           29KB  2022-09-20 12:12:35           1669         43  1.0
+sergylog/ab-test-data                                         A/B test data                                        28KB  2022-09-16 17:29:06           1344        148  1.0
+sanjeetsinghnaik/fifa-23-players-dataset                      Fifa 23 Players Dataset                               2MB  2022-10-03 06:05:45            654         32  0.9705882
+madhurpant/world-economic-data                                World Economic Data                                   5KB  2022-09-24 10:15:12           1373         36  1.0
+thedevastator/airplane-crashes-and-fatalities                 Airplane Crashes and Fatalities                     582KB  2022-09-20 05:30:35           2224         66  1.0
+dansbecker/melbourne-housing-snapshot                         Melbourne Housing Snapshot                          451KB  2018-06-05 12:52:24          97564       1155  0.7058824
+guerl1/fifa-23-complete-player-database                       FIFA 23 Complete Player Database                      1MB  2022-10-03 12:31:53            642         23  1.0
+PS C:\lep21915299> kg --help
+kg : El término 'kg' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ kg --help
++ ~~
+    + CategoryInfo          : ObjectNotFound: (kg:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\lep21915299> kaggle --help
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+
+commands:
+  {competitions,c,datasets,d,kernels,k,config}
+                        Use one of:
+                        competitions {list, files, download, submit, submissions, leaderboard}
+                        datasets {list, files, download, create, version, init, metadata, status}
+                        config {view, set, unset}
+    competitions (c)    Commands related to Kaggle competitions
+    datasets (d)        Commands related to Kaggle datasets
+    kernels (k)         Commands related to Kaggle kernels
+    config              Configuration settings
+PS C:\lep21915299> kaggle  -d "España"
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+kaggle: error: argument command: invalid choice: 'España' (choose from 'competitions', 'c', 'datasets', 'd', 'kernels', 'k', 'config')
+PS C:\lep21915299> kaggle datasets list key = "España"
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+kaggle: error: unrecognized arguments: key = España
+PS C:\lep21915299> kaggle datasets list -s "España"
+ref                                                             title                                              size  lastUpdated          downloadCount  voteCount  usabilityRating
+--------------------------------------------------------------  ------------------------------------------------  -----  -------------------  -------------  ---------  ---------------
+ricardomoya/tweets-poltica-espaa                                Tweets Política España                             17MB  2022-04-29 12:58:07             86          5  1.0
+fcojavt/municipios-spain                                        Municipios de España                              224KB  2020-05-18 15:35:15            119          6  0.7058824
+nicholasjhana/energy-consumption-generation-prices-and-weather  Hourly energy demand generation and weather         4MB  2019-10-10 14:02:37          12777        276  1.0
+datashyends/programas10n                                        Programas Elecciones España 10-N 2019             228KB  2019-11-10 17:11:33             24          1  1.0
+datamarket/movilidad-de-personas                                Movilidad de personas                              32MB  2021-02-05 08:49:55            109          5  1.0
+mikelmoli/municipal-postal-codes-spain-cdigos-postales          Municipal Postal Codes of Spain                   394KB  2022-02-26 11:40:14             37         10  0.7647059
+datamarket/noticias-economicas                                  Noticias Económicas                                16MB  2021-02-09 18:42:15             55          7  0.9411765
+datamarket/ofertas-de-mvil-fibra-y-tv                           Ofertas de móvil, fibra y TV                       12KB  2021-02-11 17:46:13             39          5  0.9411765
+xaxipirulazo/red-electrica-espaola-consumo-y-precios            Red Electrica De España                           308KB  2020-03-26 14:40:32             47          1  0.4117647
+sszbigdata/pib-y-paro-en-espaa                                  PIB y paro en España                               852B  2018-09-14 12:22:16            100          1  0.75
+datamarket/productos-de-supermercados                           Productos de supermercados                         19MB  2021-02-17 08:36:55            463          8  0.9411765
+datamarket/ofertas-de-trabajo                                   Ofertas de empleo                                 189KB  2021-05-19 16:56:11             97          5  0.9411765
+datamarket/viajes-en-tren                                       Viajes en tren                                     34MB  2021-02-09 18:57:10            161          5  0.9411765
+jersey33/datos-elecciones-generales-19962016                    Datos elecciones generales 1996-2016 España         9KB  2018-11-16 13:23:48            177          5  0.23529412
+datamarket/catastro                                             Catastro                                            3MB  2021-09-01 07:24:06             42          4  0.9411765
+jessemostipak/tour-de-france-winners                            Tour de France Winners                              2MB  2020-04-07 15:13:22            420         10  1.0
+datamarket/contratacion-publica                                 Contratación Pública                                2MB  2021-09-03 09:13:42             23          4  0.9411765
+datamarket/boletines-oficiales                                  Boletines Oficiales                                 2MB  2021-07-02 08:48:38             14          3  0.9411765
+jaimevalero/covid19-madrid                                      Covid19 Madrid                                     13KB  2022-06-21 17:08:52            271         19  0.8235294
+manualrg/spanish-electricity-market-demand-gen-price            Spanish Electricity Market: Demand, Gen. & Price  285KB  2019-03-12 18:12:53           2066         37  0.7647059
+PS C:\lep21915299> kaggle datasets list -s "Coche"
+ref                                           title                    size  lastUpdated          downloadCount  voteCount  usabilityRating
+--------------------------------------------  -----------------------  ----  -------------------  -------------  ---------  ---------------
+datamarket/venta-de-coches                    Coches de segunda mano    4MB  2021-02-10 16:32:08            424         12  0.9411765
+javierduranfernandez/audios-entornos-sonoros  Audios Entornos Sonoros  51MB  2020-11-16 19:37:10              8          1  0.125
+PS C:\lep21915299> kaggle -d download "datamarket/venta-de-coches"
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+kaggle: error: argument command: invalid choice: 'download' (choose from 'competitions', 'c', 'datasets', 'd', 'kernels', 'k', 'config')
+PS C:\lep21915299> kaggle datasets list -d "datamarket/venta-de-coches"
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+kaggle: error: unrecognized arguments: -d datamarket/venta-de-coches
+PS C:\lep21915299> kaggle -d download datamarket/venta-de-coches
+usage: kaggle [-h] [-v] {competitions,c,datasets,d,kernels,k,config} ...
+kaggle: error: argument command: invalid choice: 'download' (choose from 'competitions', 'c', 'datasets', 'd', 'kernels', 'k', 'config')
+PS C:\lep21915299> kaggle datasets download -d datamarket/venta-de-coches
+Downloading venta-de-coches.zip to C:\lep21915299
+ 77%|████████████████████████████████████████████████████████████████████████████████████████▉                          | 3.00M/3.88M [00:00<00:00, 7.64MB/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3.88M/3.88M [00:00<00:00, 7.80MB/s]
+PS C:\lep21915299> git init
+Initialized empty Git repository in C:/lep21915299/.git/
+PS C:\lep21915299> git clone https://github.com/carlosmh11/lep21915299
+Cloning into 'lep21915299'...
+warning: You appear to have cloned an empty repository.
+PS C:\lep21915299> git add .
+warning: in the working copy of '.Rhistory', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'coches-de-segunda-mano-sample.csv', LF will be replaced by CRLF the next time Git touches it
+error: 'lep21915299/' does not have a commit checked out
+fatal: adding files failed
+PS C:\lep21915299> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .RData
+        .Rhistory
+        coches-de-segunda-mano-sample.csv
+        lep21915299/
+        lpe14-10-22.R
+        venta-de-coches.zip
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\lep21915299> git add .
+warning: in the working copy of '.Rhistory', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'coches-de-segunda-mano-sample.csv', LF will be replaced by CRLF the next time Git touches it
+error: 'lep21915299/' does not have a commit checked out
+fatal: adding files failed
+PS C:\lep21915299> git commit -m "lpe14-10-22"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .RData
+        .Rhistory
+        coches-de-segunda-mano-sample.csv
+        lep21915299/
+        lpe14-10-22.R
+        venta-de-coches.zip
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\lep21915299> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS C:\lep21915299> git push -u master main
+error: src refspec main does not match any
+error: failed to push some refs to 'master'
+PS C:\lep21915299>
